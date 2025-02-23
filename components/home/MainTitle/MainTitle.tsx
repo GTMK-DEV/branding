@@ -12,9 +12,9 @@ export default function MainTitle() {
       transition={{ duration: 0.7, ease: 'easeInOut' }}
     >
       <span className={styles.main_text}>
-        글과 회고로&nbsp;
+        빌리브&nbsp;
         <br />
-        함께 성장하는 공간
+        빌리브
       </span>
       <span className={styles.sub_text}>
         빌리브에서 팀 회고를 작성하고 관리하세요.
