@@ -46,8 +46,9 @@ export default function Header() {
             />
             <div className={styles.text_group}>
               <span onClick={() => scrollToSection('function_introduce')}>
-                기능
+                회사 소개
               </span>
+              <span onClick={() => scrollToSection('FAQ')}>서비스 소개</span>
               <span onClick={() => scrollToSection('FAQ')}>FAQ</span>
             </div>
           </div>

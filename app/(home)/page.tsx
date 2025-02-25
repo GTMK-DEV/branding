@@ -12,8 +12,19 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <section id="writon_unique" className={styles.first_section}>
+        <video
+          className={styles.video}
+          width="100%"
+          height="720"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="main.mp4" type="video/mp4" />
+        </video>
         <MainTitle />
-        <Writon_MainPage />
+        {/* <Writon_MainPage /> */}
       </section>
       <section className={styles.second_section}>
         <section

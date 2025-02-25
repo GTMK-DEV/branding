@@ -38,12 +38,12 @@ const ChannelTalkScript = () => {
           }
         })();
         ChannelIO('boot', {
-          "pluginKey": "f231a2d8-4194-4927-87f2-10edcf283c1d"
+          "pluginKey": "cab11c5c-76b2-4c34-8808-e21a3777405f"
         });
         `,
       }}
     />
-  )
-}
+  );
+};
 
-export default ChannelTalkScript
+export default ChannelTalkScript;

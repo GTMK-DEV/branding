@@ -12,14 +12,13 @@ export default function MainTitle() {
       transition={{ duration: 0.7, ease: 'easeInOut' }}
     >
       <span className={styles.main_text}>
-        빌리브&nbsp;
+        BillLive&nbsp;
         <br />
-        빌리브
       </span>
       <span className={styles.sub_text}>
-        빌리브에서 팀 회고를 작성하고 관리하세요.
+        믿고 사용할 수 있는 실시간 청구 & 결제 플랫폼
         <br />
-        그리고 팀에 맞춤화 된 프라이빗한 공간을 누리세요.
+        {/* 그리고 팀에 맞춤화 된 프라이빗한 공간을 누리세요. */}
       </span>
       <StartButton backgroundColor="purple" />
     </motion.div>
