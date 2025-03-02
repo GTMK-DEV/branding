@@ -4,7 +4,15 @@
 }
 .video {
   background-color: #f0f0f0;
+  height: 100vh;
 }
+
+.scroll_top .video {
+  opacity: 0.3;
+  background-color: #f0f0f0;
+  transition: 1s;
+}
+
 .first_section {
   width: 100%;
   display: flex;
@@ -17,9 +25,9 @@
 
 .second_section {
   width: 100%;
-  background-color: var(--Gray-20, #f8f8fa);
-  position: sticky;
-  top: calc(-250px + 80px);
+
+  /* position: sticky; */
+  padding-top: 100px;
   /* 헤더 높이 빼기 */
 }
 .second_white_section {
@@ -33,7 +41,7 @@
   position: relative;
   z-index: 9;
   width: 100%;
-  padding: 42px 0 0;
+  padding: 100px 0 0;
   box-sizing: border-box;
 }
 .third_white_section {
@@ -74,9 +82,6 @@
 }
 
 @media (max-width: 720px) {
-  .first_section {
-    padding: 40px 0 32px;
-  }
   .second_section {
     top: calc(-100px + 80px);
   }
@@ -94,7 +99,11 @@
 }
 @media (max-width: 530px) {
   .first_section {
-    padding: 40px 32px 32px;
+    /* padding: 40px 32px 32px; */
+  }
+  .video {
+    background-color: #f0f0f0;
+    height: 40vh;
   }
   .second_section {
     position: relative;

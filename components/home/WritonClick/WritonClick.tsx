@@ -26,7 +26,7 @@ export default function WritonClick() {
           <span className={styles.title}>
             지금 바로&nbsp;
             <br />
-            글을 써보세요
+            시작하세요!
           </span>
           <StartButton backgroundColor="white" />
         </div>

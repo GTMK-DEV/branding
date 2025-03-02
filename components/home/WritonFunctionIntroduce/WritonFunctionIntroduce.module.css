@@ -17,7 +17,40 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: calc(100vh * 0.032);
+  gap: calc(100vh * 0.08);
+}
+
+.function_item {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  background-color: var(--Main-10);
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.function_item_text {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.function_item_text h3 {
+  font-size: var(--28px);
+  font-weight: 600;
+}
+
+.function_item_text p {
+  font-size: var(--20px);
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.function_image {
+  width: 300px;
+  height: auto;
 }
 
 .image_container {

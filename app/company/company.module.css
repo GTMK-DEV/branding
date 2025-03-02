@@ -1,0 +1,91 @@
+.container {
+  padding: 60px 50px 0;
+}
+
+.container section {
+  width: 100%;
+  padding: 30px 0 60px;
+}
+.container section .title {
+  font-size: var(--24px);
+  font-weight: 600;
+  color: var(--Gray-60);
+}
+
+.container section .line {
+  height: 1px;
+  width: 100%;
+  background: var(--Gray-40);
+  margin-top: 10px;
+}
+
+.company div {
+  height: 200px;
+}
+
+.people_container {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.people {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile {
+  width: 180px;
+  height: auto;
+}
+
+.people .name {
+  font-size: var(--20px);
+  color: var(--Gray-100);
+  font-weight: 600;
+}
+
+.people .role {
+  font-size: var(--16px);
+  color: var(--Gray-70);
+}
+
+.vision div {
+  height: 200px;
+}
+
+.value div {
+  height: 200px;
+}
+
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 50px;
+}
+
+.contact_item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact_item .contact_title {
+  font-size: var(--24px);
+  font-weight: 600;
+  color: var(--Gray-100);
+}
+
+.contact_item .content {
+  font-size: var(--18px);
+  font-weight: 500;
+  color: var(--Gray-70);
+}

@@ -1,19 +1,20 @@
 import type { Metadata } from 'next';
 import '@/styles/global.css';
 import ChannelTalkScript from '@/third-party/ChannelTalkScript';
-import Header from '@/components/common/Header';
+// import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
+import Header from '@/components/common/Header';
 
 export const viewport = {
   themeColor: '#ffffff',
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.iam.writon.co.kr'),
-  title: 'Writon : 글과 회고로 함께 성장하는 공간',
+  metadataBase: new URL('https://www.gtmk.net'),
+  title: 'BillLive : 믿고 사용할 수 있는 실시간 청구 & 결제 플랫폼',
   description:
-    '라이톤은 나에게 필요한 목표달성을 위해 “회고 챌린지”에 도전하고, “커뮤니티”를 통해 다른 유저들과 시너지를 만들어가는 회고&커뮤니티 웹서비스입니다',
+    'BillLive는 믿고 사용할 수 있는 실시간 청구 & 결제 플랫폼 입니다.',
   keywords: [
     '라이톤',
     'Writon',
@@ -39,10 +40,10 @@ export const metadata: Metadata = {
     '회고 챌린지',
   ],
   openGraph: {
-    title: 'Writon\n:글과 회고로 함께 성장하는 공간',
+    title: 'BillLive : 믿고 사용할 수 있는 실시간 청구 & 결제 플랫폼',
     description:
-      '라이톤은 나에게 필요한 목표달성을 위해 “회고 챌린지”에 도전하고, “커뮤니티”를 통해 다른 유저들과 시너지를 만들어가는 회고&커뮤니티 웹서비스입니다',
-    siteName: 'Writon : 글과 회고로 함께 성장하는 공간',
+      'BillLive는 믿고 사용할 수 있는 실시간 청구 & 결제 플랫폼 입니다',
+    siteName: 'BillLive : 믿고 사용할 수 있는 실시간 청구 & 결제 플랫폼',
     locale: 'ko_KR',
     type: 'website',
     url: 'https://www.iam.writon.co.kr',
@@ -84,7 +85,6 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <Header />
         {children}
         <Footer />
         <GoogleAnalytics gaId="G-464TRRT3QH" />

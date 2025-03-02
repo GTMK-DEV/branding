@@ -9,7 +9,7 @@ export default function MainTitle() {
       className={styles.container}
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: 'easeInOut' }}
+      transition={{ duration: 0.4, ease: 'easeInOut' }}
     >
       <span className={styles.main_text}>
         BillLive&nbsp;

@@ -2,12 +2,11 @@ import Image from 'next/image';
 import styles from './WritonRecommend.module.css';
 import { WritonRecommendData } from './WritonRecommendData';
 
-WritonRecommendData;
 export default function WritonRecommend() {
   return (
     <div className={styles.container}>
       <p className={styles.title}>
-        라이톤,
+        빌리브,
         <br />
         이런 분들에게 추천해요
       </p>

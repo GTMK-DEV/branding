@@ -16,9 +16,9 @@ export default function Footer() {
           <div className={styles.text_after}>
             <span className={styles.contact}>
               <span>Contact.</span>
-              <span className={styles.light}>writon.official@gmail.com</span>
+              <span className={styles.light}>gtmk00700@gmail.com</span>
             </span>
-            <div className={styles.bar}></div>
+            {/* <div className={styles.bar}></div>
             <span className={styles.instargram}>
               <a
                 href="https://www.instagram.com/writon_official/"
@@ -27,7 +27,7 @@ export default function Footer() {
                 Instagram
               </a>
               <span>→</span>
-            </span>
+            </span> */}
           </div>
         </div>
         <Image
