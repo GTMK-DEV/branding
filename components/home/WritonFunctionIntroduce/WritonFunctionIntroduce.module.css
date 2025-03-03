@@ -12,6 +12,7 @@
 
 .function_container {
   width: 80%;
+  max-width: 1180px;
   margin: 80px auto 0;
   padding-bottom: 42px;
   box-sizing: border-box;
@@ -54,7 +55,7 @@
 }
 
 .function_image {
-  width: 480px;
+  width: 50%;
   height: auto;
   object-fit: cover;
   border-radius: 30px;
@@ -93,9 +94,27 @@
   }
   .function_item {
     flex-direction: column;
+    gap: 0;
   }
   .function_image {
-    display: none;
+    width: 100%;
+    /* display: none; */
+  }
+
+  .function_item_text h3 {
+    font-size: var(--24px);
+    font-weight: 600;
+  }
+
+  .function_item_text p {
+    font-size: var(--16px);
+    font-weight: 500;
+    line-height: 160%;
+
+    white-space: pre-line;
+  }
+  .function_item_left {
+    justify-content: flex-start;
   }
 }
 
