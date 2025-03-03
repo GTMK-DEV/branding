@@ -11,8 +11,8 @@
 }
 
 .function_container {
-  width: 100%;
-  margin-top: 80px;
+  width: 80%;
+  margin: 80px auto 0;
   padding-bottom: 42px;
   box-sizing: border-box;
   display: flex;
@@ -22,11 +22,14 @@
 
 .function_item {
   width: 100%;
-  min-height: 250px;
   display: flex;
+  gap: 30px;
   background-color: var(--Main-10);
   box-sizing: border-box;
   border-radius: 30px;
+}
+.function_item_left {
+  justify-content: flex-end;
 }
 
 .function_item_text {
@@ -38,7 +41,7 @@
 }
 
 .function_item_text h3 {
-  font-size: var(--28px);
+  font-size: var(--32px);
   font-weight: 600;
 }
 
@@ -46,11 +49,15 @@
   font-size: var(--20px);
   font-weight: 500;
   line-height: 160%;
+
+  white-space: pre-line;
 }
 
 .function_image {
-  width: 300px;
+  width: 480px;
   height: auto;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 .image_container {
