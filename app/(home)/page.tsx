@@ -33,7 +33,7 @@ export default function Home() {
   }, [ref]);
   return (
     <>
-      <Header scrollTop={scrollTop} />
+      <Header scrollTop={scrollTop} page={'home'} />
       <div
         ref={ref}
         className={`${styles.container}  ${scrollTop !== 0 ? styles.scroll_top : ''}`}

@@ -6,7 +6,13 @@
   position: sticky;
   top: 0;
   z-index: 9999;
+}
+
+.container.home {
   background-color: #f0f0f0;
+}
+.container.company {
+  background-color: #000000;
 }
 
 .container.scroll_top {
@@ -41,6 +47,10 @@
   box-sizing: border-box;
   cursor: pointer;
 }
+.container.company .text_group span {
+  color: var(--White);
+}
+
 .writon_logo {
   width: 98.4px;
   height: 24px;
@@ -75,6 +85,7 @@
   box-sizing: border-box;
   cursor: pointer;
 }
+
 .mobile_view.active {
   opacity: 1;
   z-index: 9999;

@@ -82,6 +82,7 @@
     flex-direction: column;
     margin: 0;
     gap: 63px;
+    grid-template-columns: max-content;
   }
   .text_container {
     padding: 80px 45px 62px;

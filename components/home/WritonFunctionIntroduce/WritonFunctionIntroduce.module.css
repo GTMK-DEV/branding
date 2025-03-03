@@ -84,6 +84,12 @@
     border-radius: 30px;
     background: var(--Gray-20, #f8f8fa);
   }
+  .function_item {
+    flex-direction: column;
+  }
+  .function_image {
+    display: none;
+  }
 }
 
 @media (max-width: 530px) {

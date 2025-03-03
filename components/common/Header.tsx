@@ -1,13 +1,19 @@
 'use client';
 
 import styles from '@/styles/common/header.module.css';
-import writon_header from '@/public/image/icon/writon_header.svg';
+import logo_header from '@/public/image/icon/logo_header.svg';
 import Image from 'next/image';
 import { HeaderStartButton, StartButton } from '../atom/start-button';
 import HamburgerButton from '../atom/Hamburger-button';
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-export default function Header({ scrollTop }: { scrollTop: number }) {
+export default function Header({
+  scrollTop,
+  page,
+}: {
+  scrollTop: number;
+  page: string;
+}) {
   const [toggleActive, setToggleActive] = useState<boolean>(false);
 
   const scrollToSection = (section: string) => {
@@ -30,13 +36,15 @@ export default function Header({ scrollTop }: { scrollTop: number }) {
     <>
       {' '}
       <div
-        className={`${styles.container} ${scrollTop !== 0 ? styles.scroll_top : ''}`}
+        className={`${styles.container} 
+              ${page === 'company' && scrollTop === 0 ? styles.company : ''} 
+              ${scrollTop !== 0 ? `${styles.scroll_top} ${styles.home}` : page === 'home' ? styles.home : ''}`}
       >
         <div className={styles.inner}>
           <div className={styles.header_left}>
             <Image
               className={styles.writon_logo}
-              src={writon_header}
+              src={logo_header}
               alt="Writon"
               onClick={() => scrollToSection('top')}
             />
@@ -50,7 +58,10 @@ export default function Header({ scrollTop }: { scrollTop: number }) {
             </div>
           </div>
           <div className={styles.header_right}>
-            <HeaderStartButton />
+            <HeaderStartButton
+              backgroundColor={page === 'home' ? 'purple' : 'white'}
+              scrollTop={scrollTop}
+            />
             <HamburgerButton
               toggleActive={toggleActive}
               setToggleActive={setToggleActive}
@@ -59,14 +70,11 @@ export default function Header({ scrollTop }: { scrollTop: number }) {
         </div>
       </div>
       <div className={`${styles.mobile_view} ${toggleActive && styles.active}`}>
-        <span
-          className={styles.text}
-          onClick={() => scrollToSection('function_introduce')}
-        >
-          기능
+        <span className={styles.text}>
+          <Link href={'/'}>서비스 소개</Link>
         </span>
-        <span className={styles.text} onClick={() => scrollToSection('FAQ')}>
-          FAQ
+        <span className={styles.text}>
+          <Link href={'/company'}>회사 소개</Link>
         </span>
         <StartButton backgroundColor="purple" />
       </div>

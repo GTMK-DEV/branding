@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import '@/styles/global.css';
 import ChannelTalkScript from '@/third-party/ChannelTalkScript';
-// import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
-import Header from '@/components/common/Header';
 
 export const viewport = {
   themeColor: '#ffffff',
@@ -46,27 +44,16 @@ export const metadata: Metadata = {
     siteName: 'BillLive : 믿고 사용할 수 있는 실시간 청구 & 결제 플랫폼',
     locale: 'ko_KR',
     type: 'website',
-    url: 'https://www.iam.writon.co.kr',
+    url: 'https://www.gtmk.net',
     images: {
       url: '/image/icon/openGraph.png',
     },
   },
-  twitter: {
-    title: 'Writon : 글과 회고로 함께 성장하는 공간',
-    description:
-      '라이톤은 나에게 필요한 목표달성을 위해 “회고 챌린지”에 도전하고, “커뮤니티”를 통해 다른 유저들과 시너지를 만들어가는 회고&커뮤니티 웹서비스입니다',
-    images: {
-      url: '/image/icon/openGraph.png',
-    },
-  },
+
   viewport:
     'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleable=0',
 
-  icons: [
-    { rel: 'icon', url: '/image/icon/writon_w.svg', sizes: '48x48' },
-    { rel: 'icon', url: '/image/icon/Icon_(192x192).png', sizes: '192x192' },
-    { rel: 'icon', url: '/image/icon/Icon_(512x512).png', sizes: '512x512' },
-  ],
+  icons: [{ rel: 'icon', url: '/image/icon/card_icon.svg', sizes: '48x48' }],
 
   manifest: '/manifest.json',
   verification: {

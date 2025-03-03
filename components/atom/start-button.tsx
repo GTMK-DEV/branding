@@ -15,7 +15,7 @@ export function StartButton({ backgroundColor }: { backgroundColor: string }) {
       onMouseOut={() => setIsHovered(false)}
       className={`${styles.button} ${backgroundColor === 'purple' ? styles.purple : styles.white} ${isHovered && styles.hover}`}
     >
-      <span>시작하기</span>
+      <span>사전 신청하기</span>
       <Image
         src={backgroundColor === 'purple' ? start_arrow : start_arrow_purple}
         alt="->"
@@ -24,7 +24,13 @@ export function StartButton({ backgroundColor }: { backgroundColor: string }) {
   );
 }
 
-export function HeaderStartButton() {
+export function HeaderStartButton({
+  backgroundColor,
+  scrollTop,
+}: {
+  backgroundColor: string;
+  scrollTop: number;
+}) {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
@@ -32,9 +38,9 @@ export function HeaderStartButton() {
       onClick={() => window.open('https://tally.so/r/3qbyRk', '_blank')}
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
-      className={`${styles.header_button} ${isHovered && styles.hover}`}
+      className={`${styles.header_button} ${backgroundColor === 'purple' ? styles.purple : styles.white} ${scrollTop !== 0 ? styles.scroll_top : ''}  ${isHovered && styles.hover}`}
     >
-      <span>시작하기</span>
+      <span>사전 신청하기</span>
       <Image src={start_arrow} alt="->" />
     </button>
   );

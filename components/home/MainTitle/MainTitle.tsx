@@ -3,6 +3,9 @@
 import styles from './MainTitle.module.css';
 import { StartButton } from '@/components/atom/start-button';
 import { motion } from 'framer-motion';
+import logo_header from '@/public/image/icon/logo_header.svg';
+import Image from 'next/image';
+
 export default function MainTitle() {
   return (
     <motion.div
@@ -12,7 +15,8 @@ export default function MainTitle() {
       transition={{ duration: 0.4, ease: 'easeInOut' }}
     >
       <span className={styles.main_text}>
-        BillLive&nbsp;
+        <Image width={300} src={logo_header} alt="logo" />
+        &nbsp;
         <br />
       </span>
       <span className={styles.sub_text}>

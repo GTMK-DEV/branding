@@ -34,12 +34,12 @@
   width: 24px;
 }
 
-.purple {
+.button.purple {
   color: var(--White, #fff);
   background-color: var(--Main-50, #6272ff);
 }
 
-.white {
+.button.white {
   color: var(--Main-50, #6272ff);
   background-color: var(--White, #fff);
 }
@@ -58,9 +58,20 @@
   font-size: 1rem;
   font-family: Pretendard;
   font-weight: 600;
-  color: var(--Main-50, #6272ff);
   text-align: center;
   transition: color 0.2s;
+}
+
+.header_button.purple span {
+  color: var(--Main-50, #6272ff);
+}
+
+.header_button.white span {
+  color: var(--White, #fff);
+}
+
+.header_button.scroll_top span {
+  color: var(--Main-50, #6272ff);
 }
 
 .header_button img {

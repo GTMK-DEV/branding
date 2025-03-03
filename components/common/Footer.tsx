@@ -1,6 +1,6 @@
 import styles from '@/styles/common/footer.module.css';
 import Image from 'next/image';
-import writon_header from '@/public/image/icon/writon_header.svg';
+import logo_header from '@/public/image/icon/logo_header.svg';
 
 export default function Footer() {
   return (
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
         </div>
         <Image
-          src={writon_header}
+          src={logo_header}
           alt="writon"
           width={74}
           height={18}

@@ -49,9 +49,9 @@ export default function WritonInvite() {
       className={`${styles.container} ${active && styles.active}`}
     >
       <p className={styles.title}>
-        우리 팀만의 프라이빗한&nbsp;
+        여러 가게를 하나의 패키지로&nbsp;
         <br className={styles.br} />
-        회고 공간으로 초대해요
+        묶어 더욱 편리하게 이용하세요
       </p>
       <Image
         src={image_invite}

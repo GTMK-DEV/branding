@@ -4,13 +4,13 @@ import { StartButton } from '@/components/atom/start-button';
 import styles from './WritonClick.module.css';
 import Image from 'next/image';
 
-import writon_long from '@/public/image/icon/writon-long.png';
+import logo_long from '@/public/image/icon/logo_long.png';
 import { useState } from 'react';
 
-const imageWritonLongStyle = {
-  width: 'calc(100vw - 100px) ',
-  height: 'calc((360*(100vw - 100px)) / 1628) ',
-};
+// const imageWritonLongStyle = {
+//   width: 'calc(100vw - 100px) ',
+//   height: 'calc((360*(100vw - 100px)) / 1628) ',
+// };
 
 export default function WritonClick() {
   const [isHovered, setIsHovered] = useState<boolean>(false);
@@ -26,14 +26,14 @@ export default function WritonClick() {
           <span className={styles.title}>
             지금 바로&nbsp;
             <br />
-            시작하세요!
+            신청하세요!
           </span>
           <StartButton backgroundColor="white" />
         </div>
         <Image
-          src={writon_long}
-          alt="writon"
-          style={imageWritonLongStyle}
+          src={logo_long}
+          alt="logo_long"
+          // style={imageWritonLongStyle}
           className={styles.writon_image}
           priority={true}
         />

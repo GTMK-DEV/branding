@@ -6,6 +6,37 @@
   width: 100%;
   padding: 30px 0 60px;
 }
+
+.main {
+  width: 100%;
+  position: relative;
+}
+
+.main_image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.main p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--White);
+  font-size: var(--60px);
+  letter-spacing: 2px;
+}
+.main span {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--White);
+  font-size: var(--24px);
+  letter-spacing: 2px;
+}
+
 .container section .title {
   font-size: var(--24px);
   font-weight: 600;
@@ -19,8 +50,54 @@
   margin-top: 10px;
 }
 
-.company div {
-  height: 200px;
+.company_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.company_image {
+  width: 50%;
+  height: auto;
+}
+
+.company_introduce {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.company_title {
+  font-size: var(--32px);
+  font-weight: 700;
+  color: #222;
+}
+
+.highlight {
+  color: #757575;
+  font-weight: 800;
+}
+
+.company_descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.company_description {
+  font-size: var(--20px);
+  color: #444;
+  line-height: 150%;
+}
+
+.keyword {
+  color: #444;
+  font-weight: 800;
+}
+
+.value {
+  color: var(--Main-50); /* 신뢰, 유연성, 확장성 강조 */
+  font-weight: 600;
 }
 
 .people_container {
@@ -61,8 +138,10 @@
   height: 200px;
 }
 
-.value div {
-  height: 200px;
+.value_image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .contact_container {
@@ -88,4 +167,39 @@
   font-size: var(--18px);
   font-weight: 500;
   color: var(--Gray-70);
+}
+
+@media (max-width: 820px) {
+  .container {
+    padding: 30px 10px 0;
+  }
+  .main p {
+    font-size: var(--32px);
+    white-space: nowrap;
+  }
+  .main span {
+    opacity: 0;
+  }
+
+  .company_container {
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .company_introduce {
+    align-items: center;
+  }
+
+  .company_description {
+    font-size: var(--16px);
+    color: #444;
+    text-align: center;
+    line-height: 150%;
+  }
+
+  .keyword {
+    color: #444;
+    font-weight: 600;
+  }
 }

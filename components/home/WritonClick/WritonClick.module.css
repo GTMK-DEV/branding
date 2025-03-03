@@ -8,7 +8,7 @@
 
 .container {
   width: calc(100% - 100px);
-  background: var(--Main-50, #6272ff);
+  background: #000;
   height: 620px;
   min-height: 350px;
   display: flex;
@@ -39,7 +39,7 @@
 
 .writon_image {
   position: absolute;
-  bottom: 20px;
+  bottom: 120px;
 }
 
 @media (min-width: 531px) {
@@ -48,12 +48,12 @@
     height: 100%;
     border-radius: 0;
   }
-  .writon_image {
+  /* .writon_image {
     width: calc(100% - 100px) !important;
     max-width: 1294px !important;
     height: calc((360 * (100vw - 100px)) / 1628) !important;
     max-height: 300px !important;
-  }
+  } */
 }
 
 @media (max-width: 1080px) {
