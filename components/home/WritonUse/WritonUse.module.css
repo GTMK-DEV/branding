@@ -25,21 +25,27 @@
 
 .image_desktop {
   left: 50%;
-  transform: translateX(-65%) rotate(0);
+  transform: translateX(-85%) rotate(0);
   bottom: calc(20% - 200px);
   opacity: 0.3;
+  width: 400px;
+  height: auto;
+  border-radius: calc(36 / 980 * 100vh);
 }
 
 .image_mobile {
   left: 50%;
-  transform: translateX(76%) rotate(0);
+  transform: translateX(26%) rotate(0);
   bottom: calc(13% - 100px);
   opacity: 0.3;
   z-index: 1;
+  width: 300px;
+  height: auto;
+  border-radius: calc(30 / 980 * 100vh);
 }
 
 .container.active .image_desktop {
-  transform: translateX(-65%) translateY(-200px) rotate(-3.407deg);
+  transform: translateX(-85%) translateY(-250px) rotate(-3.407deg);
   opacity: 1;
   transition:
     opacity 0.7s,
@@ -47,7 +53,7 @@
 }
 
 .container.active .image_mobile {
-  transform: translateX(76%) translateY(-100px) rotate(8.41deg);
+  transform: translateX(26%) translateY(-100px) rotate(8.41deg);
   opacity: 1;
   transition:
     opacity 1s,
@@ -55,13 +61,13 @@
 }
 
 .container:not(.active) .image_desktop {
-  transform: translateX(-65%) rotate(0);
+  transform: translateX(-85%) rotate(0);
   transition:
     opacity 1s,
     transform 0.7s;
 }
 .container:not(.active) .image_mobile {
-  transform: translateX(76%) rotate(0);
+  transform: translateX(26%) rotate(0);
   transition:
     opacity 1s,
     transform 1.2s;
@@ -81,14 +87,14 @@
     margin-top: 35px;
   }
   .image_desktop {
-    width: 243.083px !important;
-    height: 182.313px !important;
-    border-radius: 0 !important;
+    width: 150px;
+    height: auto;
+    border-radius: 0;
   }
   .image_mobile {
-    width: 71.569px !important;
-    height: 154.97px !important;
-    border-radius: 0 !important;
+    width: 120px;
+    height: auto;
+    border-radius: 0;
   }
 }
 

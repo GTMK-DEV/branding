@@ -1,18 +1,18 @@
 'use client';
 import styles from './WritonInvite.module.css';
-import image_invite from '@/public/image/mainPage/invite-onboarding/image-invite.png';
-import image_onboarding from '@/public/image/mainPage/invite-onboarding/image-onboarding.png';
+import package1 from '@/public/package1.png';
+import package2 from '@/public/package2.png';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 
-const imageInviteStyle = {
-  width: 'calc(410 / 980 * 100vh)',
-  height: 'calc(410 / 980 * 100vh)',
-};
-const imageOnboardingStyle = {
-  width: 'calc(578 / 980 * 100vh)',
-  height: 'calc(892 / 980 * 100vh)',
-};
+// const imageInviteStyle = {
+//   width: 'calc(410 / 980 * 100vh)',
+//   height: 'calc(410 / 980 * 100vh)',
+// };
+// const imageOnboardingStyle = {
+//   width: 'calc(578 / 980 * 100vh)',
+//   height: 'calc(892 / 980 * 100vh)',
+// };
 
 export default function WritonInvite() {
   const [active, setActive] = useState<boolean>(false);
@@ -54,16 +54,16 @@ export default function WritonInvite() {
         묶어 더욱 편리하게 이용하세요
       </p>
       <Image
-        src={image_invite}
+        src={package1}
         alt="invite"
-        style={imageInviteStyle}
+        // style={imageInviteStyle}
         quality={100}
         className={styles.image_invite}
       />
       <Image
-        src={image_onboarding}
+        src={package2}
         alt="onboarding"
-        style={imageOnboardingStyle}
+        // style={imageOnboardingStyle}
         quality={100}
         className={styles.image_onboarding}
       />

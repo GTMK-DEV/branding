@@ -59,7 +59,7 @@ export default function Home() {
             <WritonFunctionIntroduce />
           </section>
         </section>
-        {/* <section className={styles.third_section}>
+        <section className={styles.third_section}>
           <section className={styles.third_white_section}>
             <WritonInvite />
           </section>
@@ -67,7 +67,7 @@ export default function Home() {
 
         <section className={styles.forth_section}>
           <WritonUse />
-        </section> */}
+        </section>
         <section className={styles.fifth_section}>
           <WritonRecommend />
         </section>

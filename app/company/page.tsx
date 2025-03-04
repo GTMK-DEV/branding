@@ -17,27 +17,27 @@ const profileData = [
   {
     image: BY,
     name: '안병준',
-    role: '대표 및 특허 담당',
+    role: '대표이사',
   },
   {
     image: KM,
     name: '김기만',
-    role: '서비스 전반적인 총괄',
+    role: 'ICT 비즈니스 플랫폼 총괄',
   },
   {
     image: DH,
     name: '김대헌',
-    role: '서비스 기획',
+    role: '사업 및 서비스 기획 담당',
   },
   {
     image: HY,
     name: '최호연',
-    role: '프론트엔드',
+    role: '프론트엔드 개발 및 채널 서비스 담당',
   },
   {
     image: JS,
     name: '박진석',
-    role: '백엔드',
+    role: '백엔드 개발 및 시스템 인프라 담당',
   },
 ];
 

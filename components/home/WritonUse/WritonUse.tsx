@@ -3,20 +3,20 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './WritonUse.module.css';
 
-import image_desktop from '@/public/image/mainPage/use-type/image-desktop-use.png';
-import image_mobile from '@/public/image/mainPage/use-type/image-mobile-use.png';
+import store from '@/public/가게.png';
+import user from '@/public/유저.png';
 import Image from 'next/image';
 
-const imageDesktopStyle = {
-  width: 'calc(743 / 1080 * 100vh)',
-  height: 'calc(557 / 1080 * 100vh)',
-  borderRadius: 'calc(36 / 980 * 100vh)',
-};
-const imageMobileStyle = {
-  width: 'calc(219 / 1080 * 100vh)',
-  height: 'calc(474 / 1080 * 100vh)',
-  borderRadius: 'calc(30 / 980 * 100vh)',
-};
+// const imageDesktopStyle = {
+//   width: 'calc(743 / 1080 * 100vh)',
+//   height: 'calc(557 / 1080 * 100vh)',
+//   borderRadius: 'calc(36 / 980 * 100vh)',
+// };
+// const imageMobileStyle = {
+//   width: 'calc(219 / 1080 * 100vh)',
+//   height: 'calc(474 / 1080 * 100vh)',
+//   borderRadius: 'calc(30 / 980 * 100vh)',
+// };
 
 export default function WritonUse() {
   const [active, setActive] = useState<boolean>(false);
@@ -52,18 +52,16 @@ export default function WritonUse() {
       ref={elementRef}
       className={`${styles.container} ${active && styles.active}`}
     >
-      <p className={styles.title}>PC와 모바일에서 모두 사용할 수 있어요</p>
+      <p className={styles.title}>가게와 유저 버전 모두 지원 가능해요!</p>
       <Image
-        src={image_desktop}
+        src={store}
         alt="desktop"
-        style={imageDesktopStyle}
         quality={100}
         className={styles.image_desktop}
       />
       <Image
-        src={image_mobile}
+        src={user}
         alt="mobile"
-        style={imageMobileStyle}
         quality={100}
         className={styles.image_mobile}
       />

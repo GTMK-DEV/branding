@@ -53,8 +53,10 @@
 .company_container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  gap: 50px;
+  /* justify-content: space-between; */
+  width: 80%;
+  margin: 30px auto;
 }
 .company_image {
   width: 40%;
