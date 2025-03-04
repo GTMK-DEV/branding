@@ -28,7 +28,7 @@
   transform: translateX(-85%) rotate(0);
   bottom: calc(20% - 200px);
   opacity: 0.3;
-  width: 400px;
+  width: 300px;
   height: auto;
   border-radius: calc(36 / 980 * 100vh);
 }
@@ -39,7 +39,7 @@
   bottom: calc(13% - 100px);
   opacity: 0.3;
   z-index: 1;
-  width: 300px;
+  width: 230px;
   height: auto;
   border-radius: calc(30 / 980 * 100vh);
 }

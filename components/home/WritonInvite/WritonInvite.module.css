@@ -30,7 +30,7 @@
   bottom: calc(16% - 160px);
   z-index: 1;
   opacity: 0.3;
-  width: 350px;
+  width: 330px;
   height: auto;
 }
 
@@ -39,7 +39,7 @@
   transform: translateX(-20%) rotate(0);
   bottom: calc(-30%);
   opacity: 0.3;
-  width: 410px;
+  width: 290px;
   height: auto;
 }
 
