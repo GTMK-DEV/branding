@@ -174,12 +174,12 @@ export default function company() {
 
               <div className={styles.contact_item}>
                 <span className={styles.contact_title}>Phone.</span>
-                <span className={styles.content}>+ 82) 2 111 0070</span>
+                <span className={styles.content}>+ 82) 2 742 0070</span>
               </div>
 
               <div className={styles.contact_item}>
                 <span className={styles.contact_title}>Fax.</span>
-                <span className={styles.content}>+ 82) 2 111 0070</span>
+                <span className={styles.content}>+ 82) 2 742 0070</span>
               </div>
 
               <div className={styles.contact_item}>
