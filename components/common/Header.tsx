@@ -42,12 +42,13 @@ export default function Header({
       >
         <div className={styles.inner}>
           <div className={styles.header_left}>
-            <Image
-              className={styles.writon_logo}
-              src={logo_header}
-              alt="Writon"
-              onClick={() => scrollToSection('top')}
-            />
+            <Link href={'/'}>
+              <Image
+                className={styles.writon_logo}
+                src={logo_header}
+                alt="Writon"
+              />
+            </Link>
             <div className={styles.text_group}>
               <span>
                 <Link href={'/'}>서비스 소개</Link>

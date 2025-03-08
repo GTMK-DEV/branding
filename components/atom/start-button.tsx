@@ -10,7 +10,7 @@ export function StartButton({ backgroundColor }: { backgroundColor: string }) {
 
   return (
     <button
-      onClick={() => window.open('https://tally.so/r/3qbyRk', '_blank')}
+      onClick={() => alert('아직 준비 중입니다.')}
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
       className={`${styles.button} ${backgroundColor === 'purple' ? styles.purple : styles.white} ${isHovered && styles.hover}`}
@@ -35,7 +35,7 @@ export function HeaderStartButton({
 
   return (
     <button
-      onClick={() => window.open('https://tally.so/r/3qbyRk', '_blank')}
+      onClick={() => alert('아직 준비 중입니다.')}
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
       className={`${styles.header_button} ${backgroundColor === 'purple' ? styles.purple : styles.white} ${scrollTop !== 0 ? styles.scroll_top : ''}  ${isHovered && styles.hover}`}
