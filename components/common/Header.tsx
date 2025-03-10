@@ -16,21 +16,8 @@ export default function Header({
 }) {
   const [toggleActive, setToggleActive] = useState<boolean>(false);
 
-  const scrollToSection = (section: string) => {
-    setToggleActive(false);
-    if (section === 'top') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
-    }
-    if (section === 'function_introduce') {
-      const element = document.getElementById(
-        'writon_unique',
-      ) as HTMLDivElement;
-      window.scrollTo({ top: element.clientHeight + 80, behavior: 'smooth' });
-      return;
-    }
-    const element = document.getElementById(section) as HTMLDivElement;
-    element.scrollIntoView({ behavior: 'smooth' });
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
     <>
@@ -42,7 +29,7 @@ export default function Header({
       >
         <div className={styles.inner}>
           <div className={styles.header_left}>
-            <Link href={'/'}>
+            <Link href={'/'} onClick={handleScrollToTop}>
               <Image
                 className={styles.writon_logo}
                 src={logo_header}
@@ -51,10 +38,14 @@ export default function Header({
             </Link>
             <div className={styles.text_group}>
               <span>
-                <Link href={'/'}>서비스 소개</Link>
+                <Link href={'/'} onClick={handleScrollToTop}>
+                  서비스 소개
+                </Link>
               </span>
               <span>
-                <Link href={'/company'}>회사 소개</Link>
+                <Link href={'/company'} onClick={handleScrollToTop}>
+                  회사 소개
+                </Link>
               </span>
             </div>
           </div>
